@@ -10,23 +10,7 @@ servers:
   - url: https://random-d.uk/api/v2
 paths: 
   /random:
-    get:
-      description: Get random duck
-      summary: Get random duck
-      operationId: '1'
-      responses:
-        '200':
-          description: Get random duck.
-          content:
-            application/json:
-              schema:
-                type: object
-        '404':
-          description: Duck not found.
-          content:
-            application/json:
-              schema:
-                type: object
+    $ref: ./paths/path-random-duck.yaml
   /{num}.jpg:
     get:
       description: Get random duck file

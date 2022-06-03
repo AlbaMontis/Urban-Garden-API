@@ -1,0 +1,18 @@
+
+get:
+  description: Get random duck
+  summary: Get random duck
+  operationId: '1'
+  responses:
+    '200':
+      description: Get random duck.
+      content:
+        application/json:
+          schema:
+            type: object
+    '404':
+      description: Duck not found.
+      content:
+        application/json:
+          schema:
+            type: object
