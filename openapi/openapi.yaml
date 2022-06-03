@@ -6,7 +6,7 @@ info:
 paths: {}
 servers:
   - url: https://api.redocly.com
-path: 
+paths: 
   /user:
     post:
       description: Creates user
