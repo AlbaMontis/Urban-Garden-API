@@ -31,8 +31,8 @@ paths:
     get:
       description: Get random duck file
       summary: Get random duck file
-      operationId: '1'
-       parameters:
+      operationId: '2'
+      parameters:
         - name: num
           in: path
           required: true
