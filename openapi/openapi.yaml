@@ -7,7 +7,7 @@ info:
     name: MIT
     url: https://opensource.org/licenses/MIT
 servers:
-  - url: https://api.redocly.com
+  - url: https://api.breezometer.com
 paths: 
   /user:
     post:
