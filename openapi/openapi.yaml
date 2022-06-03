@@ -7,22 +7,22 @@ info:
     name: MIT
     url: https://opensource.org/licenses/MIT
 servers:
-  - url: https://api.breezometer.com
+  - url: https://random-d.uk/api/v2
 paths: 
-  /user:
-    post:
-      description: Creates user
-      summary: User create
+  /random:
+    get:
+      description: Get random duck
+      summary: Get random duck
       operationId: '1'
       responses:
         '200':
-          description: User data.
+          description: Get random duck.
           content:
             application/json:
               schema:
                 type: object
         '404':
-          description: User not found.
+          description: Duck not found.
           content:
             application/json:
               schema:
