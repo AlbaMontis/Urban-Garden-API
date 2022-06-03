@@ -3,13 +3,17 @@ info:
   title: Urban Garden API
   version: 1.0.0
   description: API test description
-paths: {}
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
 servers:
   - url: https://api.redocly.com
 paths: 
   /user:
     post:
       description: Creates user
+      summary: User create
+      operationId: '1'
       responses:
         '200':
           description: User data.
@@ -17,5 +21,10 @@ paths:
             application/json:
               schema:
                 type: object
-                items:
-                  $ref: '#/components/schemas/User'
+        '404':
+          description: User not found.
+          content:
+            application/json:
+              schema:
+                type: object
+
