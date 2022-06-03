@@ -27,4 +27,30 @@ paths:
             application/json:
               schema:
                 type: object
+  /{num}.jpg:
+    get:
+      description: Get random duck file
+      summary: Get random duck file
+      operationId: '1'
+       parameters:
+        - name: num
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the duck file.
+      responses:
+        '200':
+          description: Get random duck file.
+          content:
+            image/jpeg:
+              schema:
+                type: object
+        '404':
+          description: Duck not found.
+          content:
+            application/json:
+              schema:
+                type: object
+
 
