@@ -2,5 +2,7 @@ openapi: 3.0.3
 info:
   title: Urban Garden API
   version: 1.0.0
-  description: #### API test description
+  description: API test description
 paths: {}
+servers:
+  - url: https://api.redocly.com
