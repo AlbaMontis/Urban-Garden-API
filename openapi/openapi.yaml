@@ -6,3 +6,16 @@ info:
 paths: {}
 servers:
   - url: https://api.redocly.com
+path: 
+  /user:
+    post:
+      description: Creates user
+      responses:
+        '200':
+          description: User data.
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/User'
