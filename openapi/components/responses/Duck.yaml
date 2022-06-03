@@ -1,0 +1,12 @@
+'200':
+  description: Get random duck.
+  content:
+    application/json:
+      schema:
+        type: object
+'404':
+  description: Duck not found.
+  content:
+    application/json:
+      schema:
+        type: object

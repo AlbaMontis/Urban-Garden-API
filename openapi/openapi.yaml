@@ -20,8 +20,8 @@ paths:
         - name: num
           in: path
           required: true
-          schema:
-            type: string
+          schema: 
+            $ref: ./components/schemas/Duck.yaml
           description: ID of the duck file.
       responses:
         '200':
