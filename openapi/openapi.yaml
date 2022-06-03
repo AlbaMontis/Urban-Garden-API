@@ -1,5 +1,6 @@
 openapi: 3.0.3
 info:
   title: Urban Garden API
-  version: demo
+  version: 1.0.0
+  description: #### API test description
 paths: {}
