@@ -8,13 +8,13 @@ linkChecker:
   severity: warning
   options:
     CheckExternal: false
-logo:
-  image: ./images/logo.png
+# logo:
+#   image: ./images/logo.png
   altText: Redocly Training
 toc:
   enable: true
-oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+# oasDefinitions:
+#   petstore: ./openapi/openapi.yaml
   # add links to definitions in our API registry by using a fully qualified URL.
 stylesheets:
   - https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap
@@ -31,7 +31,7 @@ nav:
     page: developer-portal/index.md
 
   - label: External docs
-    icon: ./images/redocly-icon-white.png
+    # icon: ./images/redocly-icon-white.png
     href: https://redoc.ly/docs/developer-portal/introduction/
 
   - search: true
