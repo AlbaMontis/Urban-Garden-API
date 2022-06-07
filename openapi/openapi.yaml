@@ -8,6 +8,14 @@ info:
     url: https://opensource.org/licenses/MIT
 servers:
   - url: https://random-d.uk/api/v2
+tags:
+  - name: garden
+    description: Everything about your Garden
+    externalDocs:
+      description: Find out more
+      url: 'http://swagger.io'
+  - name: urban store
+    description: Access to Urban orders
 paths: 
   /random:
     $ref: ./paths/path-random-duck.yaml
@@ -36,5 +44,3 @@ paths:
             application/json:
               schema:
                 type: object
-
-
