@@ -12,6 +12,9 @@ lint:
     - recommended
 
 features.openapi:
+  theme:
+    sidebar: 
+      backgroundColor: black
   generateCodeSamples:
     languages:
       - lang: curl

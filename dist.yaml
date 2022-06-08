@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Urban Garden API
+  version: 1.0.0
+  description: API test description
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: https://random-d.uk/api/v2
+tags:
+  - name: garden
+    description: Everything about your Garden
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+  - name: urban store
+    description: Access to Urban orders
+paths:
+  /random:
+    get:
+      description: Get random duck
+      summary: Get random duck
+      operationId: '1'
+      responses:
+        '200':
+          description: Get random duck.
+          content:
+            application/json:
+              schema:
+                type: object
+        '404':
+          description: Duck not found.
+          content:
+            application/json:
+              schema:
+                type: object
+  /{num}.jpg:
+    get:
+      description: Get random duck file
+      summary: Get random duck file
+      operationId: '2'
+      parameters:
+        - name: num
+          in: path
+          required: true
+          schema:
+            $ref: '#/components/schemas/Duck'
+          description: ID of the duck file.
+      responses:
+        '200':
+          description: Get random duck file.
+          content:
+            image/jpeg:
+              schema:
+                type: object
+        '404':
+          description: Duck not found.
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    Duck:
+      type: string
+      description: Duck file id
+      example: '1'
