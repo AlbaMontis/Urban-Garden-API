@@ -14,7 +14,7 @@ lint:
 features.openapi:
   theme:
     sidebar: 
-      backgroundColor: black
+      backgroundColor: gray
   generateCodeSamples:
     languages:
       - lang: curl
